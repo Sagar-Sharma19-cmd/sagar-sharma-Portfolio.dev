@@ -2,7 +2,7 @@
 
 A premium, interactive developer portfolio built with React and Vite. This portfolio features modern aesthetics, micro-animations, and interactive components like a terminal and games.
 
-![Portfolio Preview](https://github.com/Sagar-Sharma19-cmd/sagar-sharma-Portfolio.dev/raw/main/public/preview.png) *(Note: Add a screenshot placeholder here)*
+![Portfolio Preview](https://github.com/Sagar-Sharma19-cmd/sagar-sharma-Portfolio.dev/raw/main/public/preview.png) *(Note: You can replace this with your own screenshot in the public folder)*
 
 ## ✨ Key Features
 
@@ -47,21 +47,22 @@ To run this project locally:
    npm run build
    ```
 
-## 📸 Screenshots
+## 📸 Project Highlights
 
-| Hero Section | Skills Section |
+| Feature | Description |
 | :---: | :---: |
-| *(Add Hero Screenshot)* | *(Add Skills Screenshot)* |
+| **Interactive Terminal** | A retro-style developer terminal for exploration. |
+| **Snake Game** | An integrated game to boost visitor engagement. |
+| **Typing Challenge** | Test your typing speed directly on the site. |
+| **Modern Aesthetics** | Glassmorphism and sleek dark mode by default. |
 
-| Terminal | Snake Game |
-| :---: | :---: |
-| *(Add Terminal Screenshot)* | *(Add Snake Screenshot)* |
+## 📫 Contact Me
 
-## 📫 Contact
+I'm always open to new opportunities and collaborations. Feel free to reach out:
 
-Feel free to reach out to me via the contact form on my website or through:
-- **Email:** [sagar@example.com](mailto:sagar@example.com)
-- **LinkedIn:** [linkedin.com/in/sagar-sharma](https://linkedin.com/in/sagar-sharma)
+- **📧 Email:** [contact.sagarsharma19@gmail.com](mailto:contact.sagarsharma19@gmail.com)
+- **🔗 LinkedIn:** [linkedin.com/in/sagar-sharma-1921-/](https://www.linkedin.com/in/sagar-sharma-1921-/)
+- **🌐 Website:** [sagar-sharma-portfolio-dev.vercel.app](https://sagar-sharma-portfolio-dev.vercel.app) *(Note: Update this after deployment)*
 
 ---
 
