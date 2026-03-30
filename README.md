@@ -62,7 +62,7 @@ I'm always open to new opportunities and collaborations. Feel free to reach out:
 
 - **📧 Email:** [contact.sagarsharma19@gmail.com](mailto:contact.sagarsharma19@gmail.com)
 - **🔗 LinkedIn:** [linkedin.com/in/sagar-sharma-1921-/](https://www.linkedin.com/in/sagar-sharma-1921-/)
-- **🌐 Website:** [sagar-sharma-portfolio-dev.vercel.app](https://sagar-sharma-portfolio-dev.vercel.app) *(Note: Update this after deployment)*
+- **🌐 Website:** [sagar-sharma.vercel.app](https://sagar-sharma.vercel.app)
 
 ---
 
