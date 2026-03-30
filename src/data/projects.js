@@ -4,14 +4,14 @@ export const projects = [
     description:
       "A sophisticated Flutter-based fintech application featuring phone OTP authentication via Supabase, real-time transaction tracking, and a premium Glassmorphic UI for modern banking experiences.",
     tech: ["Flutter", "Dart", "Supabase", "REST API", "Framer Motion"],
-    link: "https://github.com/Sagar-Sharma19-cmd/Sarathi",
+    link: "https://github.com/Sagar-Sharma19-cmd/Sarathi-Mobile",
   },
   {
     title: "EduTwin | Education Dashboard",
     description:
       "A full-stack educational management system and interactive dashboard. Features role-based access control for admins/students, attendance tracking, and comprehensive academic analytics.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Dashboard UI"],
-    link: "https://github.com/Sagar-Sharma19-cmd/EduTwin",
+    link: "https://github.com/Sagar-Sharma19-cmd/EduTwin-AI",
   },
   {
     title: "Portfolio.dev | Interactive Portfolio",
