@@ -8,15 +8,41 @@ import {
   EmailIcon,
   PhoneIcon,
 } from "./Icons";
+import { supabase } from "../supabaseClient";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
 
-  function submit(e) {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
+
+  const submit = async (e) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
-  }
+    setLoading(true);
+
+    try {
+      const { error } = await supabase
+        .from('contacts')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          }
+        ]);
+
+      if (error) throw error;
+
+      setSent(true);
+      setFormData({ name: "", email: "", message: "" });
+      setTimeout(() => setSent(false), 3000);
+    } catch (error) {
+      console.error("Error sending message:", error.message);
+      alert("Oops! Something went wrong. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section id="contact" className="section">
@@ -147,6 +173,8 @@ export default function Contact() {
             <input
               id="contact-name"
               className="form-input"
+              value={formData.name}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               placeholder="Sagar Sharma"
               required
             />
@@ -159,6 +187,8 @@ export default function Contact() {
               id="contact-email"
               className="form-input"
               type="email"
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               placeholder="contact.sagarsharma19@gmail.com"
               required
             />
@@ -170,12 +200,19 @@ export default function Contact() {
             <textarea
               id="contact-message"
               className="form-textarea"
+              value={formData.message}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder="Tell me about your project..."
               required
             />
           </div>
-          <button className="form-submit" type="submit" id="contact-submit">
-            Send Message
+          <button
+            className="form-submit"
+            type="submit"
+            id="contact-submit"
+            disabled={loading}
+          >
+            {loading ? "Sending..." : "Send Message"}
             <span>→</span>
           </button>
 
